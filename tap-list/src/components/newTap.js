@@ -9,7 +9,8 @@ function NewTap(props) {
     props.onSubmit({
       name: event.target.name.value,
       brand: event.target.brand.value,
-      pintsLeft: event.target.pintsLeft.value,
+      flavor: event.target.flavor.value,
+      pintsLeft: 124,
       pricePerPint: event.target.pricePerPint.value,
       id: v4(),
     });

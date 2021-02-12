@@ -15,9 +15,8 @@ function ReusableForm(props) {
           <input type="text" name="brand" placeholder="Brand" class="form-control"/>
         </div>
         <div class="form-group">
-          <label for="pintsLeft">Pints Left</label>
-          <input type="number" name="pintsLeft" placeholder='Pints Left' class="form-control" />
-          <br />
+          <label for="brand">Flavor</label>
+          <input type="text" name="flavor" placeholder="Flavor" class="form-control"/>
         </div>
         <div class="form-group">
           <label for="pricePerPint">Price Per Pint</label>
