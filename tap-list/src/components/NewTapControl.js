@@ -15,9 +15,16 @@ class NewTapControl extends React.Component {
   }
 
   handleClick = () => { 
-    this.setState(prevState => ({
-      formVisibleOnPage: !prevState.formVisibleOnPage
-    }));
+    if(this.state.selectedTap === null) {
+      this.setState(prevState => ({
+        formVisibleOnPage: !prevState.formVisibleOnPage
+      }));
+    } else {
+      this.setState(() => ({
+        formVisibleOnPage: false,
+        selectedTap: null
+      }));
+    }
   }
 
   handleAddingNewtaps = (newTap) => {
@@ -46,6 +53,7 @@ class NewTapControl extends React.Component {
           onClickingEdit={this.handleEditClick}
         />
       );
+      buttonText='Return to tap list'
     }
     else if(this.state.formVisibleOnPage) {
       currentlyVisibleState = (
