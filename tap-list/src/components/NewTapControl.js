@@ -42,6 +42,18 @@ class NewTapControl extends React.Component {
     this.setState({ selectedTap: selectedTap})
   }
 
+  handleSellClick = (id) => {
+    const updatedPints = this.state.selectedTap.pintsLeft-1; 
+    const updatedTap = {...this.state.selectedTap, pintsLeft: updatedPints}
+    const editedTapList = this.state.masterTapList.filter( 
+      (tap) => tap.id !== id) 
+      .concat(updatedTap)
+    this.setState({
+      masterTapList: editedTapList, 
+      selectedTap: null
+    })
+  }
+
   render() {
     let currentlyVisibleState = null; 
     let buttonText = '';
@@ -51,6 +63,7 @@ class NewTapControl extends React.Component {
           tap = {this.state.selectedTap}
           onClickingDelete={this.handleDeletingTap}
           onClickingEdit={this.handleEditClick}
+          onClickingSell={this.handleSellClick}
         />
       );
       buttonText='Return to tap list'
