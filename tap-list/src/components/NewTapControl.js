@@ -5,7 +5,8 @@ class NewTapControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      formVisibleOnPage: false
+      formVisibleOnPage: false,
+      masterTapList: []
     };
   }
 
@@ -18,5 +19,10 @@ class NewTapControl extends React.Component {
         taplist = {this.state.masterTapList}
       />
     }
+    return (
+      <React.Fragment>
+        {currentlyVisibleState}
+      </React.Fragment>
+    )
   }
 }
