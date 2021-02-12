@@ -1,5 +1,5 @@
 import React from 'react';
-import TapList from 'TapList';
+import TapList from './TapList';
 
 class NewTapControl extends React.Component {
   constructor(props) {
@@ -16,7 +16,7 @@ class NewTapControl extends React.Component {
     } else {
       currentlyVisibleState = 
         <TapList 
-        taplist = {this.state.masterTapList}
+        tapList = {this.state.masterTapList}
       />
     }
     return (
@@ -26,3 +26,5 @@ class NewTapControl extends React.Component {
     )
   }
 }
+
+export default NewTapControl

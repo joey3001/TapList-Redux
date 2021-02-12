@@ -9,11 +9,11 @@ function TapList(props) {
       {props.tapList.map((tap) => (
         <Tap 
           name={tap.name}
-          brand={merch.brand}
-          pintsLeft={merch.pintsLeft}
-          pricePerPint={merch.pricePerPint}
-          flavor={merch.flavor}
-          id={merch.id}
+          brand={tap.brand}
+          pintsLeft={tap.pintsLeft}
+          pricePerPint={tap.pricePerPint}
+          flavor={tap.flavor}
+          id={tap.id}
         />
       ))}
     </React.Fragment>
@@ -22,7 +22,7 @@ function TapList(props) {
 
 TapList.propTypes = { 
   tapList: PropTypes.array,
-  onTapSelection: PropTypes.func
+  // onTapSelection: PropTypes.func
 }
 
 export default TapList; 
