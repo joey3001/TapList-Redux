@@ -30,7 +30,7 @@ class NewTapControl extends React.Component {
     let buttonText = '';
     if(this.state.formVisibleOnPage) {
       currentlyVisibleState = (
-        <ReusableForm onNewTapCreation={this.handleAddingNewTaps} />
+        <ReusableForm onSubmit={this.handleAddingNewTaps} />
       )
       buttonText='Return to tap list'
     } else {

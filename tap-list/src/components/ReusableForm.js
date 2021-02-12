@@ -1,10 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { v4 } from 'uuid'; 
 
 function ReusableForm(props) {
+  function handleNewTapFormSubmission(event) {
+    event.preventDefault(); 
+    props.onSubmission({
+      name: event.target.name.value,
+      brand: event.target.brand.value,
+      pintsLeft: event.target.pintsLeft.value,
+      pricePerPint: event.target.pricePerPint.value,
+      id: v4(),
+    })
+  }
   return (
     <React.Fragment>
-      <form onSubmit = {props.formSubmissionHandler}>
+      <form onSubmit = {handleNewTapFormSubmission}>
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" name="name" placeholder="Name" class="form-control"/>
@@ -30,7 +41,7 @@ function ReusableForm(props) {
 }
 
 ReusableForm.propTypes = { 
-  formSubmissionHandler: PropTypes.func, 
+  onNewTapSubmission: PropTypes.func, 
   buttonText: PropTypes.string
 }
 
