@@ -6,7 +6,7 @@ import ReusableForm from "./ReusableForm";
 function NewTap(props) {
   function handleNewTapFormSubmission(event) {
     event.preventDefault();
-    props.onNewTapCreation({
+    props.onSubmit({
       name: event.target.name.value,
       brand: event.target.brand.value,
       pintsLeft: event.target.pintsLeft.value,
@@ -25,7 +25,7 @@ function NewTap(props) {
 }
 
 NewTap.propTypes = {
-  onNewTapCreation: PropTypes.func,
+  onSubmit: PropTypes.func,
 };
 
-export default NewMerchForm;
+export default NewTap;

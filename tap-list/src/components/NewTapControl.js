@@ -1,6 +1,7 @@
 import React from 'react';
 import TapList from './TapList';
-import ReusableForm from './ReusableForm'
+// import ReusableForm from './ReusableForm'
+import NewTap from './NewTap'
 
 class NewTapControl extends React.Component {
   constructor(props) {
@@ -30,7 +31,10 @@ class NewTapControl extends React.Component {
     let buttonText = '';
     if(this.state.formVisibleOnPage) {
       currentlyVisibleState = (
-        <ReusableForm onSubmit={this.handleAddingNewTaps} />
+        <NewTap 
+          onSubmit={this.handleAddingNewtaps} 
+          buttonText="submit"
+        />
       )
       buttonText='Return to tap list'
     } else {
