@@ -9,6 +9,7 @@ function Tap(props) {
       <p>Flavor: {props.flavor}</p>
       <p>Pints Left: {props.pintsLeft}</p>
       <p>Price per Pint: {props.pricePerPint}</p>
+      <hr/>
     </React.Fragment>
   )
 }
