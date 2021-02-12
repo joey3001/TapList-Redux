@@ -23,4 +23,4 @@ TapDetail.propTypes = {
   onClickingEdit: PropTypes.func
 };
 
-export default tapDetail;
+export default TapDetail;
