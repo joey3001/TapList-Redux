@@ -1,6 +1,5 @@
 import React from 'react';
 import TapList from './TapList';
-// import ReusableForm from './ReusableForm'
 import NewTap from './NewTap'
 import TapDetail from './TapDetail'
 
@@ -42,17 +41,33 @@ class NewTapControl extends React.Component {
     this.setState({ selectedTap: selectedTap})
   }
 
-  handleSellClick = (id) => {
-    const updatedPints = this.state.selectedTap.pintsLeft-1; 
-    const updatedTap = {...this.state.selectedTap, pintsLeft: updatedPints}
-    const editedTapList = this.state.masterTapList.filter( 
-      (tap) => tap.id !== id) 
-      .concat(updatedTap)
-    this.setState({
-      masterTapList: editedTapList, 
-      selectedTap: null
-    })
+  handleSellClick = () => {
+    if(this.state.selectedTap.pintsLeft >=1) {
+      const updatedPints = this.state.selectedTap.pintsLeft-4
+      const updatedTap = {...this.state.selectedTap, pintsLeft: updatedPints}
+      const editedTapList = this.state.masterTapList.filter( 
+        (tap) => tap.id !== this.state.selectedTap.id) 
+        .concat(updatedTap)
+      this.setState({
+        masterTapList: editedTapList, 
+        selectedTap: updatedTap
+      })
+    }
   }
+
+//   let editedTapList; 
+//   let updatedTap; 
+//   if(this.state.selectedTap.pintsLeft >= 1) {
+//     const updatedPints = this.state.selectedTap.pintsLeft-1; 
+//     updatedTap = {...this.state.selectedTap, pintsLeft: updatedPints}
+//     editedTapList = this.state.masterTapList.filter(tap => tap.id != this.selectedTap.id) 
+//       .concat(updatedTap)
+//     this.setState({
+//       masterTapList: editedTapList, 
+//       selectedTap: updatedTap
+//     })
+//   } 
+// }
 
   render() {
     let currentlyVisibleState = null; 
