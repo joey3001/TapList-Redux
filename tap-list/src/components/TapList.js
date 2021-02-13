@@ -3,9 +3,15 @@ import Tap from './Tap';
 import PropTypes from 'prop-types'; 
 
 function TapList(props) {
+  const TapListStyle = {
+    fontWeight: 600,
+    marginTop: 25,
+    fontSize: 35
+  }
+
   return (
     <React.Fragment>
-      <h1>Tap List</h1>
+      <p style={TapListStyle}>Tap List</p>
       {props.tapList.map((tap) => (
         <Tap 
           name={tap.name}

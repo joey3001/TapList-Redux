@@ -1,12 +1,13 @@
 import React from 'react';
 import NewTapControl from './NewTapControl'; 
 
-
-
 function App() {
+
   return (
     <React.Fragment> 
-      <NewTapControl />
+      <div className='container'>
+        <NewTapControl />
+      </div>
     </React.Fragment>
   );
 }
