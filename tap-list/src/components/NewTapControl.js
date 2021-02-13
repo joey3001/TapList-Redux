@@ -43,7 +43,7 @@ class NewTapControl extends React.Component {
 
   handleSellClick = () => {
     if(this.state.selectedTap.pintsLeft >=1) {
-      const updatedPints = this.state.selectedTap.pintsLeft-4
+      const updatedPints = this.state.selectedTap.pintsLeft-1
       const updatedTap = {...this.state.selectedTap, pintsLeft: updatedPints}
       const editedTapList = this.state.masterTapList.filter( 
         (tap) => tap.id !== this.state.selectedTap.id) 
@@ -55,20 +55,6 @@ class NewTapControl extends React.Component {
     }
   }
 
-//   let editedTapList; 
-//   let updatedTap; 
-//   if(this.state.selectedTap.pintsLeft >= 1) {
-//     const updatedPints = this.state.selectedTap.pintsLeft-1; 
-//     updatedTap = {...this.state.selectedTap, pintsLeft: updatedPints}
-//     editedTapList = this.state.masterTapList.filter(tap => tap.id != this.selectedTap.id) 
-//       .concat(updatedTap)
-//     this.setState({
-//       masterTapList: editedTapList, 
-//       selectedTap: updatedTap
-//     })
-//   } 
-// }
-
   render() {
     let currentlyVisibleState = null; 
     let buttonText = '';
@@ -76,8 +62,8 @@ class NewTapControl extends React.Component {
       currentlyVisibleState = (
         <TapDetail 
           tap = {this.state.selectedTap}
-          onClickingDelete={this.handleDeletingTap}
-          onClickingEdit={this.handleEditClick}
+          // onClickingDelete={this.handleDeletingTap}
+          // onClickingEdit={this.handleEditClick}
           onClickingSell={this.handleSellClick}
         />
       );
