@@ -9,7 +9,6 @@ class NewTapControl extends React.Component {
     super(props);
     this.state = {
       formVisibleOnPage: false,
-      masterTapList: [],
       selectedTap: null
     };
   }
@@ -28,12 +27,22 @@ class NewTapControl extends React.Component {
   }
 
   handleAddingNewtaps = (newTap) => {
-    const newTapList = this.state.masterTapList.concat(newTap); 
-    this.setState({
-      masterTapList: newTapList, 
-      formVisibleOnPage: false
-    })
+    const { dispatch } = this.props;
+    const { name, brand, flavor, pintsLeft, pricePerPint, id } = newTap; 
+    const action = {
+      type: 'ADD_TICKET',
+      name: name,
+      brand: brand,
+      flavor: flavor, 
+      pintsLeft: pintsLeft, 
+      pricePerPint: pricePerPint,
+      id: id
+    }; 
+    
+    dispatch(action);
+    this.setState({formVisibleOnPage: false}); 
   }
+
 
   handleSelectTap = (id) => {
     const selectedTap = this.state.masterTapList.filter(
