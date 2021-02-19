@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Joe's React based Tap List 
+
+#### This application uses React to create a simple UI wherein a user can create new kombucha taps & sell pints to customers. 
+
+#### By Joseph Nero 
+
+This react application features a single source of truth with multiple pages being manipulated by changing state in the the child elements closest common parent. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -6,65 +12,71 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+## Setup/Installation Requirements
+#### If you have difficulty following any of the steps/instructions listed below, please contact me at josephnero111@gmail.com 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Software requirements 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. A web browser to view the website. I recommend Google Chrome.
 
-### `npm test`
+2. Git Bash (or another terminal program) & Git.  
+    - To clone the repository from Github using git commands in the terminal, you need a terminal program & Git. For Windows OS, I recommend the Git Bash terminal program. Installing Git Bash will also install Git. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. VSCode (or another code editor)
+    - To view/edit this code, you need a code editor. I recommend VSCode. 
 
-### `npm run build`
+4. Node.js 
+    - Node.js is a javascript runtime environment that you need to use npm, the preferred package manager for this application. You can download it at [this link](https://nodejs.org/en/download/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Detailed instructions to install Git Bash & VSCode can be found in the Setup/Installation Requirements section of the README for [this repo.](https://github.com/joey3001/first-friday-project)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### To clone & run this project locally follow these instructions : 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Open your terminal program and enter the following command to clone the project : 
 
-### `npm run eject`
+            git clone https://github.com/joey3001/TapList-React.git
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. Navigate to the tap-list directory and enter the following command to install the project's packages : 
+            npm install 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Enter the following command to build the project using the npm package manager : 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+            npm run build
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+4. Enter the following command to run the project in a dev server : 
+
+            npm run start 
+
+## Known Bugs
+
+No known bugs are present at this time. 
+
+## Support and contact details
+
+If you have an issue, reach out to me at josephnero111@gmail.com
+
+## Technologies Used
+
+  * HTML 
+  * CSS
+    - Bootstrap
+  * Javascript
+    - Jquery 
+  * Node.js
+  * VSCode 
+  * Git
+  * Github 
+  * Git Bash
+  * Exchange Rate API 
+
+### License
+
+[MIT License](https://choosealicense.com/licenses/mit/)
+
+Copyright (c) 2020 Joseph Nero 
 
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
