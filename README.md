@@ -47,6 +47,10 @@ In the project directory, you can run:
 
             npm run start 
 
+## Component Diagram 
+
+
+
 ## Known Bugs
 
 No known bugs are present at this time. 
