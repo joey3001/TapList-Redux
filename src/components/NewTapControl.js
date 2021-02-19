@@ -1,7 +1,8 @@
 import React from 'react';
 import TapList from './TapList';
-import NewTap from './NewTap'
-import TapDetail from './TapDetail'
+import NewTap from './NewTap';
+import TapDetail from './TapDetail';
+import { connect } from 'react-redux'; 
 
 class NewTapControl extends React.Component {
   constructor(props) {
@@ -96,4 +97,5 @@ class NewTapControl extends React.Component {
   }
 }
 
-export default NewTapControl
+NewTapControl = connect()(NewTapControl); 
+export default NewTapControl; 

@@ -7,7 +7,6 @@ import './index.css';
 import { createStore } from 'redux';
 import reducer from './reducers/tap-list-reducer';
 import { Provider } from 'react-redux'; 
-
 const store = createStore(reducer); 
 
 ReactDOM.render(
