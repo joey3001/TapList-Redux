@@ -60,7 +60,7 @@ If you have an issue, reach out to me at josephnero111@gmail.com
   * HTML 
   * CSS
     - Bootstrap
-  * Javascript
+  * JavaScript
     - React
   * Node.js
   * VSCode 
