@@ -23,8 +23,9 @@ function TapDetail(props) {
 
 TapDetail.propTypes = {
   tap: PropTypes.object,
-  onClickingDelete: PropTypes.func,
-  onClickingEdit: PropTypes.func, 
+  // was planning on adding the two functions below
+  // onClickingDelete: PropTypes.func,
+  // onClickingEdit: PropTypes.func, 
   onClickingSell: PropTypes.func
 };
 

@@ -20,8 +20,8 @@ Tap.propTypes = {
   name: PropTypes.string, 
   brand: PropTypes.string, 
   flavor: PropTypes.string, 
-  pintsLeft: PropTypes.string, 
-  pricePerPint: PropTypes.number,
+  pintsLeft: PropTypes.number, 
+  pricePerPint: PropTypes.string,
   id: PropTypes.string, 
   selection: PropTypes.func
 }
