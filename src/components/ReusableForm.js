@@ -7,19 +7,19 @@ function ReusableForm(props) {
     <React.Fragment>
       <form onSubmit = {props.formSubmissionHandler}>
         <div className="form-group">
-          <label for="name">Name</label>
+          <label htmlFor="name">Name</label>
           <input type="text" name="name" placeholder="Name" className="form-control"/>
         </div>
         <div className="form-group">
-          <label for="brand">Brand</label>
+          <label htmlFor="brand">Brand</label>
           <input type="text" name="brand" placeholder="Brand" className="form-control"/>
         </div>
         <div className="form-group">
-          <label for="brand">Flavor</label>
+          <label htmlFor="brand">Flavor</label>
           <input type="text" name="flavor" placeholder="Flavor" className="form-control"/>
         </div>
         <div className="form-group">
-          <label for="pricePerPint">Price Per Pint</label>
+          <label htmlFor="pricePerPint">Price Per Pint</label>
           <input type="number" name="pricePerPint" step="0.01" placeholder="$0.00" className="form-control"/>
         </div>
         <button type='submit'>{props.buttonText}</button>
