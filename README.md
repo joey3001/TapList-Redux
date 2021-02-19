@@ -49,6 +49,8 @@ In the project directory, you can run:
 
 ## Component Diagram 
 
+![Component Diagram](./TapListDiagram.png)
+
 
 
 ## Known Bugs
