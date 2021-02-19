@@ -8,10 +8,6 @@ This react application features a single source of truth with multiple pages bei
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
-
 ## Setup/Installation Requirements
 #### If you have difficulty following any of the steps/instructions listed below, please contact me at josephnero111@gmail.com 
 
@@ -50,8 +46,6 @@ In the project directory, you can run:
 ## Component Diagram 
 
 ![Component Diagram](./TapListDiagram.png)
-
-
 
 ## Known Bugs
 
