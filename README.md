@@ -67,13 +67,13 @@ If you have an issue, reach out to me at josephnero111@gmail.com
   * CSS
     - Bootstrap
   * Javascript
-    - Jquery 
+    - React
   * Node.js
   * VSCode 
   * Git
   * Github 
   * Git Bash
-  * Exchange Rate API 
+
 
 ### License
 
