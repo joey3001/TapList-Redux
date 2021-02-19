@@ -1,4 +1,4 @@
-# Joe's React based Tap List 
+# Joe's Redux based Tap List 
 
 #### This application uses React to create a simple UI wherein a user can create new kombucha taps & sell pints to customers. 
 
