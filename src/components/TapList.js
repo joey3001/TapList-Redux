@@ -21,6 +21,7 @@ function TapList(props) {
           flavor={tap.flavor}
           id={tap.id}
           selection={props.onTapSelection}
+          key={tap.id}
         />
       ))}
     </React.Fragment>
