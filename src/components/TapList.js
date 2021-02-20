@@ -12,7 +12,7 @@ function TapList(props) {
   return (
     <React.Fragment>
       <p style={TapListStyle}>Tap List</p>
-      {props.tapList.map((tap) => (
+      {Object.values(props.tapList).map((tap) => 
         <Tap 
           name={tap.name}
           brand={tap.brand}
@@ -23,13 +23,13 @@ function TapList(props) {
           selection={props.onTapSelection}
           key={tap.id}
         />
-      ))}
+      )}
     </React.Fragment>
-  )
+  );
 }
 
 TapList.propTypes = { 
-  tapList: PropTypes.array,
+  tapList: PropTypes.object,
   onTapSelection: PropTypes.func
 }
 

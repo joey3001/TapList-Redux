@@ -88,7 +88,7 @@ class NewTapControl extends React.Component {
     } else {
       currentlyVisibleState = 
         <TapList 
-        tapList = {this.state.masterTapList}
+        tapList = {this.props.masterTapList}
         onTapSelection = {this.handleSelectTap}
       />
       buttonText='Add a kombucha tap!'
