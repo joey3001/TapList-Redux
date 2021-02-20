@@ -3,6 +3,7 @@ import TapList from './TapList';
 import NewTap from './NewTap';
 import TapDetail from './TapDetail';
 import { connect } from 'react-redux'; 
+import PropTypes from 'prop-types'; 
 
 class NewTapControl extends React.Component {
   constructor(props) {
@@ -44,9 +45,7 @@ class NewTapControl extends React.Component {
   }
 
   handleSelectTap = (id) => {
-    const selectedTap = this.state.masterTapList.filter(
-      (tap) => tap.id === id
-    )[0]
+    const selectedTap = this.props.masterTapList[id];
     this.setState({ selectedTap: selectedTap})
   }
 
@@ -105,10 +104,15 @@ class NewTapControl extends React.Component {
   }
 }
 
+NewTapControl.propTypes = {
+  masterTapList: PropTypes.object
+};
+
 const mapStateToProps = state => {
   return {
     masterTapList: state
   }
 }
+
 NewTapControl = connect(mapStateToProps)(NewTapControl); 
 export default NewTapControl; 
