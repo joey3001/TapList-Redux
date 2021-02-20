@@ -38,11 +38,10 @@ class NewTapControl extends React.Component {
       pricePerPint: pricePerPint,
       id: id
     }; 
-    
+
     dispatch(action);
     this.setState({formVisibleOnPage: false}); 
   }
-
 
   handleSelectTap = (id) => {
     const selectedTap = this.state.masterTapList.filter(
@@ -106,5 +105,10 @@ class NewTapControl extends React.Component {
   }
 }
 
-NewTapControl = connect()(NewTapControl); 
+const mapStateToProps = state => {
+  return {
+    masterTapList: state
+  }
+}
+NewTapControl = connect(mapStateToProps)(NewTapControl); 
 export default NewTapControl; 
