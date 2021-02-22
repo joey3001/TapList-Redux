@@ -1,10 +1,10 @@
 # Joe's Redux based Tap List 
 
-#### This application uses React to create a simple UI wherein a user can create new kombucha taps & sell pints to customers. 
+#### This application uses React and redux to create a simple UI wherein a user can create new kombucha taps & sell pints to customers. 
 
 #### By Joseph Nero 
 
-This react application features a single source of truth with multiple pages being manipulated by changing state in the the child elements closest common parent. 
+This react application features a single source of truth with multiple pages being manipulated by changing state with redux. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
